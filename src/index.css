@@ -1,29 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Open+Sans:wght@300&family=Outfit:wght@100&display=swap');
 
-*{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.listado{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2.5rem;
-}
-
-.listado__li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+body{
+    overflow: auto;
 }
