@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { CategoryProvider } from "./context/categoryContext";
 import Products from "./pages/Products";
 import DrinkInfo from "./pages/DrinkInfo";
 import Layaout from "./Layouts/Layaout";
+import { CategoryProvider } from "./context/categoryContext";
 function App() {
   return (
     <>
