@@ -12,12 +12,12 @@ const Categorys = () => {
 
   return (
     <>
-      <div className="w-60 flex flex-col items-start bg-yellow-600 p-5 rounded-lg">
+      <div className="w-60 flex flex-col items-start p-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
         <h1 className="font-bold text-xl pb-2">Categories</h1>
         {category.map((category, index) => (
           <Link key={index} to="/">
             <button
-              className="hover:bg-gray-200 rounded-lg p-2 focus:outline-none focus:border-blue-500 focus:ring focus:ring-yellow-500"
+              className="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600"
               onClick={() => handleCategoryClick(category.strCategory)}
             >
               {category.strCategory}
