@@ -48,10 +48,14 @@ function DrinkInfo() {
               />
             </div>
             <div className="w-2/4 px-5">
-              <h1 className="text-2xl font-bold text-teal-500">{drink.strDrink}</h1>
-              <p className="text-teal-500">{drink.strCategory}</p>
-              <p className="text-teal-500">{drink.strAlcoholic}</p>
-              <p className="pt-8 text-teal-500">
+              <div className="group border border-slate-800 hover:bg-slate-800 hover:shadow-lg hover:border-transparent mb-4 p-4">
+                <h1 className="text-2xl font-bold text-teal-500">
+                  {drink.strDrink}
+                </h1>
+                <p className="text-teal-500">{drink.strCategory}</p>
+                <p className="text-teal-500">{drink.strAlcoholic}</p>
+              </div>
+              <p className="group border border-slate-800 hover:bg-slate-800 hover:shadow-lg hover:border-transparent mb-4 p-4 text-teal-500 ">
                 <span className="font-bold">
                   Ingredients: <br />
                 </span>
@@ -62,7 +66,7 @@ function DrinkInfo() {
                 ))}
               </p>
 
-              <p className="pt-8 text-teal-500">
+              <p className=" text-teal-500 group border border-slate-800 hover:bg-slate-800 hover:shadow-lg hover:border-transparent mb-4 p-4">
                 <span className="font-bold">
                   Instruccions: <br />
                 </span>
@@ -72,12 +76,18 @@ function DrinkInfo() {
           </div>
           <div className="flex flex-row gap-5">
             {hasPrevious && (
-              <Link className="bg-slate-800 p-2 rounded-lg text-teal-500" to={`/drink/${previousProduct.idDrink}`}>
+              <Link
+                className="bg-slate-800 p-2 rounded-lg text-teal-500"
+                to={`/drink/${previousProduct.idDrink}`}
+              >
                 Anterior: {previousProduct.strDrink}
               </Link>
             )}
             {hasNext && (
-              <Link className="bg-slate-800 p-2 rounded-lg text-teal-500" to={`/drink/${nextProduct.idDrink}`}>
+              <Link
+                className="bg-slate-800 p-2 rounded-lg text-teal-500"
+                to={`/drink/${nextProduct.idDrink}`}
+              >
                 Siguiente: {nextProduct.strDrink}
               </Link>
             )}
