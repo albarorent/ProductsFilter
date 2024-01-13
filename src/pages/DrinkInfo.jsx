@@ -38,16 +38,16 @@ function DrinkInfo() {
       {" "}
       {loading && <p className="text-teal-500">Cargando...</p>}
       {!loading && drink && (
-        <div className="flex flex-col gap-10 p-10 w-full ">
-          <div className="flex flex-col md:flex-row gap-5 pt-2">
-            <div className="w-2/4">
+        <div className="flex flex-col gap-0 p-0 md:gap-10 md:p-10 w-full ">
+          <div className="flex flex-col md:flex-row gap-5 pt-2 items-center md:items-start justify-center md:justify-normal">
+            <div className="w-full md:w-2/4">
               <img
                 className="w-96"
                 src={drink.strDrinkThumb}
                 alt={drink.strDrink}
               />
             </div>
-            <div className="w-2/4 px-5">
+            <div className="w-full md:w-2/4 px-5">
               <div className="group border border-slate-800 hover:bg-slate-800 hover:shadow-lg hover:border-transparent mb-4 p-4">
                 <h1 className="text-2xl font-bold text-teal-500">
                   {drink.strDrink}

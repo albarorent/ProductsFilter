@@ -9,7 +9,7 @@ function Layaout() {
     <>
       <Header />
       <main className="container mx-auto px-10">
-        <div className="flex flex-col md:flex-row gap-5  items-center md:items-baseline justify-center md:justify-normal">
+        <div className="flex flex-col md:flex-row gap-5  items-center md:items-start justify-center md:justify-normal">
           <Categorys />
           <Outlet />
         </div>
