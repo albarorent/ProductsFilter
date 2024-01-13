@@ -9,9 +9,11 @@ function Products() {
     searchDrink(e.target.value);
   };
 
-  useEffect(()=>{
-    searchDrink();
-  },[])
+  useEffect(() => {
+    if (producto.length === 0) {
+      searchDrink();
+    }
+  }, []);
 
   return (
     <>
@@ -46,7 +48,6 @@ function Products() {
               ) : (
                 <>
                   <p className="text-teal-500">No se encontraron productos.</p>
-                  
                 </>
               )
             ) : (
